@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name</label>
+      <input
+        required
+        type="text"
+        id="name"
+        placeholder="Enter your Name">
+      <br><label for="email" id="email-label">
+        Email</label>
+      <input
+        required
+        type="email"
+        id="email"
+        placeholder="Enter your Email">
+      <label for="number" id="number-label">
+        Age(optional)</label>
+      <input
+        type="number"
+        id="number"
+        placeholder="Age"
+        min="15"
+        max="50"
+      >
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown">
+        <option>student</option>
+        <option selected>part-time job</option>
+        <option>full-time job</option>
+      </select>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <input 
+        type="radio"
+        name="recommendation"
+        id="recommendation"
+        value="yes"
+      >
+      <label for="recommendation">Yes</label>
+      <input
+        type="radio"
+        name="recommendation"
+        id="recommendation"
+        value="no"
+      >
+      <label for="recommendation">No</label>
+      <p>What would you like to see improved? (Check all that apply)</p>
+      <input
+        type="checkbox"
+        value="html"
+        id="Improvization"
+      >
+      <label for="Improvization">HTML</label>
+      <input
+        type="checkbox"
+        value="css"
+        id="Improvization"
+      >
+      <label for="Improvization">CSS</label>
+      <input
+        type="checkbox"
+        value="Js"
+        id="Improvization"
+      >
+      <label for="Improvization">
+        JavaScript</label>
+      <p>Any comments or suggestions?</p>
+      <textarea
+        rows="5"
+        cols="25"
+        >
+      </textarea>
+      <button id="submit" type="submit">Submit form</button> 
+      </form>
+  </body>
+</html>
