@@ -1,0 +1,58 @@
+#playing-cards {
+  background-color: #d8bfd8;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+  border-radius: 12px;
+  width: 250px;
+  height: 350px;
+  padding: 10px;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: ceneter;
+  flex: 1;
+}
+.card h1,
+.card p {
+  margin: 0;
+  font-size: 25px;
+}
+.card:nth-child(3) {
+  color: red;
+}
+.right {
+  align-self: flex-end;
+}
+/* Make the Ace symbol larger */
+.card:first-child .middle p {
+  font-size: 65px;
+}
+
+/* Make the two center symbols larger */
+.card:nth-child(2) .middle p {
+  font-size: 45px;
+}
+.card:nth-child(3) .middle p {
+  font-size: 55px;
+}
+
